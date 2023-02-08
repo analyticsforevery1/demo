@@ -1,0 +1,36 @@
+{
+  "presentationTable" : {
+    "name" : "Dim - Product",
+    "presentationColumns" : [ {
+      "name" : "Row Wid",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Product.Row Wid"
+    }, {
+      "name" : "Product Code",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Product.Product Code"
+    }, {
+      "name" : "Product Name",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Product.Product Name"
+    }, {
+      "name" : "Active Flg",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Product.Active Flg"
+    }, {
+      "name" : "Creation Date",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Product.Creation Date"
+    }, {
+      "name" : "Update Date",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Product.Update Date"
+    } ],
+    "hierarchies" : [ {
+      "name" : "product",
+      "sourceLogicalTable" : "logicalTable:Demo.Dim - Product",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Demo.Dim - Product.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Demo.Dim - Product.Detail",
+        "displayColumn" : "presentationColumn:Demo.Dim - Product.Product Name"
+      } ]
+    } ]
+  }
+}

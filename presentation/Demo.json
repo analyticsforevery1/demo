@@ -1,0 +1,15 @@
+{
+  "subjectArea" : {
+    "name" : "Demo",
+    "sourceBusinessModel" : "businessModel:Demo",
+    "tableOrder" : [ {
+      "name" : "presentationTable:Demo.Dim - Customer"
+    }, {
+      "name" : "presentationTable:Demo.Fact - Sales"
+    }, {
+      "name" : "presentationTable:Demo.Dim - Product"
+    }, {
+      "name" : "presentationTable:Demo.Dim - Location"
+    } ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "Dim - Location",
+    "sourceTable" : "physicalTable:MyDatabase.ADMIN.D_LOCATION",
+    "overrideSourceCacheSetting" : false
+  }
+}

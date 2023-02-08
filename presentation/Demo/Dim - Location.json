@@ -1,0 +1,64 @@
+{
+  "presentationTable" : {
+    "name" : "Dim - Location",
+    "presentationColumns" : [ {
+      "name" : "Row Wid",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Location.Row Wid"
+    }, {
+      "name" : "Location Code",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Location.Location Code"
+    }, {
+      "name" : "Location Name",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Location.Location Name"
+    }, {
+      "name" : "Country",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Location.Country"
+    }, {
+      "name" : "State",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Location.State"
+    }, {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Location.City"
+    }, {
+      "name" : "Area",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Location.Area"
+    }, {
+      "name" : "Active Flg",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Location.Active Flg"
+    }, {
+      "name" : "Creation Date",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Location.Creation Date"
+    }, {
+      "name" : "Update Date",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Location.Update Date"
+    } ],
+    "hierarchies" : [ {
+      "name" : "location",
+      "sourceLogicalTable" : "logicalTable:Demo.Dim - Location",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Demo.Dim - Location.Total"
+      }, {
+        "name" : "country",
+        "sourceLogicalLevel" : "logicalLevel:Demo.Dim - Location.country",
+        "displayColumn" : "presentationColumn:Demo.Dim - Location.Country"
+      }, {
+        "name" : "state",
+        "sourceLogicalLevel" : "logicalLevel:Demo.Dim - Location.state",
+        "displayColumn" : "presentationColumn:Demo.Dim - Location.State"
+      }, {
+        "name" : "city",
+        "sourceLogicalLevel" : "logicalLevel:Demo.Dim - Location.city",
+        "displayColumn" : "presentationColumn:Demo.Dim - Location.City"
+      }, {
+        "name" : "Area",
+        "sourceLogicalLevel" : "logicalLevel:Demo.Dim - Location.Area",
+        "displayColumn" : "presentationColumn:Demo.Dim - Location.Area"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Demo.Dim - Location.Detail",
+        "displayColumn" : "presentationColumn:Demo.Dim - Location.Row Wid"
+      } ]
+    } ]
+  }
+}

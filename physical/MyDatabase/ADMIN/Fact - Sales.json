@@ -1,0 +1,35 @@
+{
+  "physicalTable" : {
+    "name" : "Fact - Sales",
+    "sourceTable" : "physicalTable:MyDatabase.ADMIN.F_SALES",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:MyDatabase.ADMIN.Dim - Product",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.ADMIN.Fact - Sales.PRODUCT_WID",
+        "rightColumn" : "physicalColumn:MyDatabase.ADMIN.Dim - Product.ROW_WID"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:MyDatabase.ADMIN.Dim - Customer",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.ADMIN.Fact - Sales.CUSTOMER_WID",
+        "rightColumn" : "physicalColumn:MyDatabase.ADMIN.Dim - Customer.ROW_WID"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:MyDatabase.ADMIN.Dim - Location",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.ADMIN.Fact - Sales.LOCATION_WID",
+        "rightColumn" : "physicalColumn:MyDatabase.ADMIN.Dim - Location.ROW_WID"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

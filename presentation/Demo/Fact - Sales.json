@@ -1,0 +1,24 @@
+{
+  "presentationTable" : {
+    "name" : "Fact - Sales",
+    "presentationColumns" : [ {
+      "name" : "Customer Wid",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Fact - Sales.Customer Wid"
+    }, {
+      "name" : "Product Wid",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Fact - Sales.Product Wid"
+    }, {
+      "name" : "Location Wid",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Fact - Sales.Location Wid"
+    }, {
+      "name" : "Creation Date",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Fact - Sales.Creation Date"
+    }, {
+      "name" : "Update Date",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Fact - Sales.Update Date"
+    }, {
+      "name" : "Sales Amt",
+      "sourceLogicalColumn" : "logicalColumn:Demo.Fact - Sales.Sales Amt"
+    } ]
+  }
+}
