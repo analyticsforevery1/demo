@@ -11,7 +11,7 @@
       "name" : "Product Name",
       "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Product.Product Name"
     }, {
-      "name" : "Active Flg",
+      "name" : "Active Flag New",
       "sourceLogicalColumn" : "logicalColumn:Demo.Dim - Product.Active Flg"
     }, {
       "name" : "Creation Date",
